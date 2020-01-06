@@ -61,7 +61,10 @@ def answer(message):
                    'Выпуклость функции. Точки перегиба...')
         msg = bot.send_message(message.chat.id, 'Выберите билет:', reply_markup=bilety)
         bot.register_next_step_handler(msg, bilety_func)
-
+        check = True
+    else:
+        bot.send_message(message.chat.id, 'Не готово!', reply_markup=hideBoard)
+        check = True
 
 def bilety_func(message):
     text = message.text
@@ -97,7 +100,7 @@ def bilety_func(message):
         bot.send_photo(message.chat.id, photo=doc_113)
         bot.send_photo(message.chat.id, photo=doc_114)
         bot.send_photo(message.chat.id, photo=doc_115)
-        bot.send_message(message.chat.id, 'Готово!')
+        bot.send_message(message.chat.id, 'Готово!', reply_markup=hideBoard)
     elif text == 'Аксиома полноты...':
         bot.send_chat_action(message.chat.id, 'upload_photo')
         doc_21 = 'https://imgur.com/fWvvTgI'
@@ -352,6 +355,5 @@ def bilety_func(message):
     #    bot.send_chat_action(message.chat.id, 'upload_photo')
     #    doc_291 = ''
     #    bot.send_message(message.chat.id, 'Готово!', reply_markup=hideBoard)
-
 
 bot.polling()
