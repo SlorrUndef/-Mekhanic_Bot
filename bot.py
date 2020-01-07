@@ -206,7 +206,6 @@ def bilety_func(message):
         bot.send_photo(message.chat.id, photo=doc_94)
         bot.send_message(message.chat.id, 'Готово!', reply_markup=hideBoard)
     elif text == 'Предельный переход и арифметические операции. Предельный переход и неравенства.':
-        bot.send_chat_action(message.chat.id, 'upload_photo')
         doc_101 = 'https://imgur.com/P7VZYkb'
         doc_102 = 'https://imgur.com/t6hc4lJ'
         doc_103 = 'https://imgur.com/OOaiZDu'
@@ -230,7 +229,6 @@ def bilety_func(message):
         bot.send_photo(message.chat.id, photo=doc_114)
         bot.send_photo(message.chat.id, photo=doc_115)
         bot.send_photo(message.chat.id, photo=doc_116)
-
         bot.send_message(message.chat.id, 'Готово!', reply_markup=hideBoard)
     elif text == 'Предел функции по базе. Критерий Коши существования предела функции по базе.':
         bot.send_chat_action(message.chat.id, 'upload_photo')
@@ -327,33 +325,33 @@ def bilety_func(message):
         bot.send_photo(message.chat.id, photo=doc_222)
         bot.send_photo(message.chat.id, photo=doc_223)
         bot.send_message(message.chat.id, 'Готово!', reply_markup=hideBoard)
-    #elif text == 'Теоремы Ферма и Ролля.':
-    #    bot.send_chat_action(message.chat.id, 'upload_photo')
-    #    doc_231 = ''
-    #    bot.send_message(message.chat.id, 'Готово!', reply_markup=hideBoard)
-    #elif text == 'Теоремы Коши и Лагранжа о конечных приращениях.':
-    #    bot.send_chat_action(message.chat.id, 'upload_photo')
-    #    doc_241 = ''
-    #    bot.send_message(message.chat.id, 'Готово!', reply_markup=hideBoard)
-    #elif text == 'Правила Лопиталя раскрытия неопределенностей.':
-    #    bot.send_chat_action(message.chat.id, 'upload_photo')
-    #    doc_251 = ''
-    #    bot.send_message(message.chat.id, 'Готово!', reply_markup=hideBoard)
-    #elif text == 'Формула Тейлора с остаточным членом в форме Лагранжа.':
-    #    bot.send_chat_action(message.chat.id, 'upload_photo')
-    #    doc_261 = ''
-    #    bot.send_message(message.chat.id, 'Готово!', reply_markup=hideBoard)
-    #elif text == 'Формула Тейлора с остаточным членом в форме Пеано...':
-    #    bot.send_chat_action(message.chat.id, 'upload_photo')
-    #    doc_271 = ''
-    #    bot.send_message(message.chat.id, 'Готово!', reply_markup=hideBoard)
-    #elif text == 'Критерий монотонности функции на интервале...':
-    #    bot.send_chat_action(message.chat.id, 'upload_photo')
-    #    doc_281 = ''
-    #    bot.send_message(message.chat.id, 'Готово!', reply_markup=hideBoard)
-    #elif text == 'Выпуклость функции. Точки перегиба...':
-    #    bot.send_chat_action(message.chat.id, 'upload_photo')
-    #    doc_291 = ''
-    #    bot.send_message(message.chat.id, 'Готово!', reply_markup=hideBoard)
+    elif text == 'Теоремы Ферма и Ролля.':
+        bot.send_chat_action(message.chat.id, 'upload_photo')
+        doc_231 = ''
+        bot.send_message(message.chat.id, 'Не готово!', reply_markup=hideBoard)
+    elif text == 'Теоремы Коши и Лагранжа о конечных приращениях.':
+        bot.send_chat_action(message.chat.id, 'upload_photo')
+        doc_241 = ''
+        bot.send_message(message.chat.id, 'Не готово!', reply_markup=hideBoard)
+    elif text == 'Правила Лопиталя раскрытия неопределенностей.':
+        bot.send_chat_action(message.chat.id, 'upload_photo')
+        doc_251 = ''
+        bot.send_message(message.chat.id, 'Не готово!', reply_markup=hideBoard)
+    elif text == 'Формула Тейлора с остаточным членом в форме Лагранжа.':
+        bot.send_chat_action(message.chat.id, 'upload_photo')
+        doc_261 = ''
+        bot.send_message(message.chat.id, 'Не готово!', reply_markup=hideBoard)
+    elif text == 'Формула Тейлора с остаточным членом в форме Пеано...':
+        bot.send_chat_action(message.chat.id, 'upload_photo')
+        doc_271 = ''
+        bot.send_message(message.chat.id, 'Не готово!', reply_markup=hideBoard)
+    elif text == 'Критерий монотонности функции на интервале...':
+        bot.send_chat_action(message.chat.id, 'upload_photo')
+        doc_281 = ''
+        bot.send_message(message.chat.id, 'Не готово!', reply_markup=hideBoard)
+    elif text == 'Выпуклость функции. Точки перегиба...':
+        bot.send_chat_action(message.chat.id, 'upload_photo')
+        doc_291 = ''
+        bot.send_message(message.chat.id, 'Не готово!', reply_markup=hideBoard)
 
 bot.polling()
