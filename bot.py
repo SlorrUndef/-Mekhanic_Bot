@@ -206,14 +206,10 @@ def bilety_func(message):
         bot.send_photo(message.chat.id, photo=doc_94)
         bot.send_message(message.chat.id, 'Готово!', reply_markup=hideBoard)
     elif text == 'Предельный переход и арифметические операции. Предельный переход и неравенства.':
-        doc_101 = 'https://imgur.com/P7VZYkb'
-        doc_102 = 'https://imgur.com/t6hc4lJ'
-        doc_103 = 'https://imgur.com/OOaiZDu'
-        doc_104 = 'https://imgur.com/ZYuAUch'
-        bot.send_photo(message.chat.id, photo=doc_101)
-        bot.send_photo(message.chat.id, photo=doc_102)
-        bot.send_photo(message.chat.id, photo=doc_103)
-        bot.send_photo(message.chat.id, photo=doc_104)
+        bot.send_photo(message.chat.id, photo="https://imgur.com/vv2KbFX")
+        bot.send_photo(message.chat.id, photo="https://imgur.com/Lfnlk2P")
+        bot.send_photo(message.chat.id, photo="https://imgur.com/K4OP4RP")
+        bot.send_photo(message.chat.id, photo="https://imgur.com/8KPIhX8")
         bot.send_message(message.chat.id, 'Готово!', reply_markup=hideBoard)
     elif text == 'Предел композиции функции. Теорема о пределе монотонной функции на [a, +-∞) при x +∞(-∞).':
         bot.send_chat_action(message.chat.id, 'upload_photo')
